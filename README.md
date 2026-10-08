@@ -127,7 +127,8 @@ Cách làm từng nhiệm vụ: xem [CHECKPOINTS.md](CHECKPOINTS.md). Cách nộ
 ## Bài làm — Nguyễn Vũ Huy (2A202602662)
 
 - **Provider:** OpenAI `gpt-4o-mini` + `text-embedding-3-small`, Python 3.13
-- **LangSmith project:** `day22-nguyenvuhuy` (≥ 100 traces: 50 `rag-query` + 50 `ab-rag-query`)
+- **LangSmith project:** `day22-nguyenvuhuy` (≥ 100 traces: 50 `rag-query` + 50 `ab-rag-query`) — [link project](https://smith.langchain.com/o/51ceb9a5-fe02-4357-9679-4e83b16065c6/projects/p/6dadbdb7-186e-4a8a-90cd-4580f5f7ced6)
+- **Trace công khai:** [Bước 1 `rag-query`](https://smith.langchain.com/public/bb91fd3e-faa7-45a9-9794-b8f0b3b7cb84/r) · [Bước 2 `ab-rag-query`](https://smith.langchain.com/public/92b555b3-6ca2-4bac-beb2-fc951a006b34/r)
 - **Prompt Hub:** `nguyen-vu-huy-rag-prompt-v1` (ngắn gọn, 2-4 câu) · `nguyen-vu-huy-rag-prompt-v2` (chuyên gia, có cấu trúc, 3-5 câu)
 - **Evidence + phân tích V1 vs V2:** xem [evidence/README.md](evidence/README.md)
 

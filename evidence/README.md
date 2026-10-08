@@ -4,6 +4,16 @@
 **Môi trường:** OpenAI `gpt-4o-mini` (temperature 0) + `text-embedding-3-small` · FAISS (chunk 500 / overlap 50, k = 3) · Python 3.13 · ragas 0.4.3 · guardrails-ai 0.11.0 · langsmith 0.14.4
 **LangSmith project:** `day22-nguyenvuhuy`, có 100 traces (50 `rag-query` + 50 `ab-rag-query`)
 
+## Link LangSmith
+
+| | Link |
+|---|---|
+| Project (cần đăng nhập) | https://smith.langchain.com/o/51ceb9a5-fe02-4357-9679-4e83b16065c6/projects/p/6dadbdb7-186e-4a8a-90cd-4580f5f7ced6 |
+| Trace công khai — Bước 1 `rag-query` (retriever → prompt → LLM → parser) | https://smith.langchain.com/public/bb91fd3e-faa7-45a9-9794-b8f0b3b7cb84/r |
+| Trace công khai — Bước 2 `ab-rag-query` (metadata `prompt_version=v2`, `request_id=req-0048`) | https://smith.langchain.com/public/92b555b3-6ca2-4bac-beb2-fc951a006b34/r |
+
+LangSmith hiện chỉ cho chia sẻ công khai **từng trace**, không có chế độ public cho cả project. Vì vậy repo cung cấp link project gốc kèm 2 trace mẫu công khai, mỗi bước 1 trace.
+
 ## Danh sách tệp
 
 | Tệp | Nội dung | Tiêu chí |
