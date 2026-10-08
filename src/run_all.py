@@ -9,6 +9,7 @@ Cách dùng:
 import sys
 import argparse
 import importlib
+import traceback
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -22,7 +23,8 @@ STEPS = {
 }
 
 
-def run_step(step_num: int):
+def run_step(step_num: int) -> bool:
+    """Import module của bước step_num, gọi main() và trả về True nếu thành công."""
     title, module_name = STEPS[step_num]
     print(f"\n{'=' * 60}")
     print(f"  {title}")
@@ -37,11 +39,13 @@ def run_step(step_num: int):
             print(f"\n❌ {title} — DỪNG (config thiếu hoặc lỗi)")
         return e.code == 0
     except Exception as e:
+        traceback.print_exc()
         print(f"\n❌ {title} — LỖI: {e}")
         return False
 
 
 def main():
+    """Parse --step, chạy các bước tương ứng và in bảng tổng kết."""
     parser = argparse.ArgumentParser(
         description="Chạy Day22 Lab: LangSmith + Prompt Versioning + RAGAS + Guardrails"
     )
@@ -69,6 +73,9 @@ def main():
         title = STEPS[step_num][0]
         status = "✅ PASS" if success else "❌ FAIL"
         print(f"  {status}  {title}")
+
+    # Exit code ≠ 0 nếu có bước thất bại (hữu ích cho CI / script)
+    sys.exit(0 if all(results.values()) else 1)
 
 
 if __name__ == "__main__":
