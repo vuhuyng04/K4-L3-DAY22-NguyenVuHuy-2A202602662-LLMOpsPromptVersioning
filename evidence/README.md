@@ -48,14 +48,14 @@ Faithfulness = số claim được context hỗ trợ / tổng số claim trong 
 RAGAS sinh ngược câu hỏi từ câu trả lời rồi đo độ tương đồng embedding với câu hỏi gốc.
 - Câu trả lời ngắn và trực tiếp của V1 sinh ra câu hỏi gần với câu hỏi gốc.
 - V2 thêm chi tiết phụ nên câu hỏi sinh ngược bị "loãng". Ví dụ *chunking strategy*: V1 đạt 1.00, V2 đạt 0.68. *Transformer architecture*: V1 0.96, V2 0.79.
-- V2 chỉ thắng ở vài câu mà câu hỏi cần liệt kê nhiều ý, ví dụ *context length of GPT-4*: V2 1.00, V1 0.73.
+- Ở một số ít câu V2 lại cao hơn, ví dụ *context length of GPT-4*: V2 1.00, V1 0.73. Report không lưu câu trả lời nên chưa giải thích được các trường hợp này; có thể là dao động của LLM-judge.
 
 **3. Context recall / precision bằng nhau: hai metric này đo retriever, không đo prompt.**
 - Cả hai phiên bản dùng cùng FAISS index, k = 3 và cùng câu hỏi, nên retrieved contexts giống hệt nhau.
 - context_recall = 1.0: 3 chunk luôn chứa đủ thông tin của đáp án chuẩn, vì knowledge base có các câu gần như nguyên văn đáp án.
 - Chênh lệch nhỏ của context_precision ở 2 câu (*LangSmith*, *PII*) đến từ việc LLM-judge chấm không tất định, không phải do prompt.
 
-**Kết luận.** Với bộ QA dạng định nghĩa ngắn này, **V1 (ngắn gọn) là lựa chọn tốt hơn** cho production: grounded hơn, sát câu hỏi hơn, và rẻ hơn khoảng 45% token output. V2 vẫn đạt faithfulness 0.94 nhờ ràng buộc "mọi câu phải được context hỗ trợ". V2 hợp với câu hỏi cần giải thích nhiều bước, nhưng nên thêm giới hạn kiểu "chỉ diễn đạt lại thông tin có trong context" để giảm claim suy diễn.
+**Kết luận.** Với bộ QA dạng định nghĩa ngắn này, **V1 (ngắn gọn) là lựa chọn tốt hơn** cho production: grounded hơn, sát câu hỏi hơn, và câu trả lời ngắn hơn khoảng 46% số từ (tức ít token output hơn). V2 vẫn đạt faithfulness 0.94 nhờ ràng buộc "mọi câu phải được context hỗ trợ". V2 hợp với câu hỏi cần giải thích nhiều bước, nhưng nên thêm giới hạn kiểu "chỉ diễn đạt lại thông tin có trong context" để giảm claim suy diễn.
 
 ## Ghi chú
 
