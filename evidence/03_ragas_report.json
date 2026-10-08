@@ -1,0 +1,747 @@
+{
+  "prompt_v1_scores": {
+    "faithfulness": 0.9648095238095238,
+    "answer_relevancy": 0.911033039432714,
+    "context_recall": 1.0,
+    "context_precision": 0.9416666665940835
+  },
+  "prompt_v2_scores": {
+    "faithfulness": 0.9397438672438674,
+    "answer_relevancy": 0.8889360090404965,
+    "context_recall": 1.0,
+    "context_precision": 0.9416666665950834
+  },
+  "target_met": true,
+  "winner_per_metric": {
+    "faithfulness": "v1",
+    "answer_relevancy": "v1",
+    "context_recall": "tie",
+    "context_precision": "v2"
+  },
+  "answer_stats": {
+    "v1": {
+      "avg_answer_words": 41.1,
+      "empty_answers": 0
+    },
+    "v2": {
+      "avg_answer_words": 75.6,
+      "empty_answers": 0
+    }
+  },
+  "config": {
+    "provider": "openai",
+    "llm_model": "gpt-4o-mini",
+    "embedding_model": "text-embedding-3-small",
+    "retriever_k": 3,
+    "chunk_size": 500,
+    "chunk_overlap": 50,
+    "n_samples": 50,
+    "generated_at": "2026-10-08T04:54:01+00:00"
+  },
+  "per_sample": {
+    "v1": [
+      {
+        "question": "What are the three main types of machine learning?",
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.9111,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is overfitting in machine learning?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "Explain the bias-variance tradeoff.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.8694,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "How does regularization prevent overfitting?",
+        "faithfulness": 0.8333,
+        "answer_relevancy": 0.9498,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is cross-validation?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.8635,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is backpropagation?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.865,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What are Convolutional Neural Networks primarily used for?",
+        "faithfulness": 0.8,
+        "answer_relevancy": 0.8033,
+        "context_recall": 1.0,
+        "context_precision": 0.8333
+      },
+      {
+        "question": "How do LSTM networks address the vanishing gradient problem?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 0.5
+      },
+      {
+        "question": "What activation functions are commonly used in neural networks?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9597,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is the role of pooling layers in CNNs?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9683,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is the transformer architecture?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9625,
+        "context_recall": 1.0,
+        "context_precision": 0.5833
+      },
+      {
+        "question": "What are word embeddings?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.8914,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is transfer learning in NLP?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "How does BERT handle language understanding?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is self-attention in transformers?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is GPT and how is it trained?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.8568,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is instruction tuning?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.7806,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is RLHF?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.619,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is chain-of-thought prompting?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.8112,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is the context length of GPT-4?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.7316,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is Retrieval-Augmented Generation?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.7577,
+        "context_recall": 1.0,
+        "context_precision": 0.5
+      },
+      {
+        "question": "What are the main components of a RAG pipeline?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is dense retrieval?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.8823,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "Why is chunking strategy important in RAG?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9997,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What advanced RAG techniques exist beyond basic retrieval?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9723,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What are vector databases used for?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 0.8333
+      },
+      {
+        "question": "What is FAISS?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9191,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "How do text embeddings capture semantic meaning?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is HNSW?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.7091,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is hybrid search in vector databases?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is LangChain?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9327,
+        "context_recall": 1.0,
+        "context_precision": 0.5
+      },
+      {
+        "question": "What is LangChain Expression Language (LCEL)?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9693,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is LangGraph?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9442,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What memory types does LangChain support?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9647,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What are LangChain retrievers?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9712,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is LangSmith?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.7786,
+        "context_recall": 1.0,
+        "context_precision": 0.8333
+      },
+      {
+        "question": "What information do LangSmith traces capture?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.7229,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is the LangSmith Prompt Hub?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9868,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "How does LangSmith help monitor production LLM applications?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What are LangSmith datasets used for?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is RAGAS?",
+        "faithfulness": 0.8571,
+        "answer_relevancy": 0.9025,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "How does RAGAS compute faithfulness?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is answer relevancy in RAGAS?",
+        "faithfulness": 0.75,
+        "answer_relevancy": 0.8965,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is context recall in RAGAS?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9592,
+        "context_recall": 1.0,
+        "context_precision": 0.8333
+      },
+      {
+        "question": "What inputs does RAGAS evaluation require?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9232,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is Guardrails AI?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9785,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is PII and why is it important to detect in LLM responses?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9808,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What does structured output validation ensure?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.8083,
+        "context_recall": 1.0,
+        "context_precision": 0.8333
+      },
+      {
+        "question": "What is Constitutional AI?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.961,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What are common AI safety concerns with LLMs?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.7878,
+        "context_recall": 1.0,
+        "context_precision": 0.8333
+      }
+    ],
+    "v2": [
+      {
+        "question": "What are the three main types of machine learning?",
+        "faithfulness": 0.8333,
+        "answer_relevancy": 0.9055,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is overfitting in machine learning?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.859,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "Explain the bias-variance tradeoff.",
+        "faithfulness": 0.9,
+        "answer_relevancy": 0.8695,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "How does regularization prevent overfitting?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9517,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is cross-validation?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9027,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is backpropagation?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.8287,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What are Convolutional Neural Networks primarily used for?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9084,
+        "context_recall": 1.0,
+        "context_precision": 0.8333
+      },
+      {
+        "question": "How do LSTM networks address the vanishing gradient problem?",
+        "faithfulness": 0.875,
+        "answer_relevancy": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 0.5
+      },
+      {
+        "question": "What activation functions are commonly used in neural networks?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9597,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is the role of pooling layers in CNNs?",
+        "faithfulness": 0.6667,
+        "answer_relevancy": 0.9092,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is the transformer architecture?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.7928,
+        "context_recall": 1.0,
+        "context_precision": 0.5833
+      },
+      {
+        "question": "What are word embeddings?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9051,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is transfer learning in NLP?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "How does BERT handle language understanding?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is self-attention in transformers?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is GPT and how is it trained?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.8568,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is instruction tuning?",
+        "faithfulness": 0.8889,
+        "answer_relevancy": 0.7774,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is RLHF?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.5434,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is chain-of-thought prompting?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.7763,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is the context length of GPT-4?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is Retrieval-Augmented Generation?",
+        "faithfulness": 0.875,
+        "answer_relevancy": 0.7577,
+        "context_recall": 1.0,
+        "context_precision": 0.5
+      },
+      {
+        "question": "What are the main components of a RAG pipeline?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is dense retrieval?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.7989,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "Why is chunking strategy important in RAG?",
+        "faithfulness": 0.8182,
+        "answer_relevancy": 0.6809,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What advanced RAG techniques exist beyond basic retrieval?",
+        "faithfulness": 0.8,
+        "answer_relevancy": 0.9723,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What are vector databases used for?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 0.8333
+      },
+      {
+        "question": "What is FAISS?",
+        "faithfulness": 0.9,
+        "answer_relevancy": 0.9347,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "How do text embeddings capture semantic meaning?",
+        "faithfulness": 0.8571,
+        "answer_relevancy": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is HNSW?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.7262,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is hybrid search in vector databases?",
+        "faithfulness": 0.75,
+        "answer_relevancy": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is LangChain?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.7872,
+        "context_recall": 1.0,
+        "context_precision": 0.5
+      },
+      {
+        "question": "What is LangChain Expression Language (LCEL)?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9639,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is LangGraph?",
+        "faithfulness": 0.9091,
+        "answer_relevancy": 0.8103,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What memory types does LangChain support?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9233,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What are LangChain retrievers?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9765,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is LangSmith?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.755,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What information do LangSmith traces capture?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.6483,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is the LangSmith Prompt Hub?",
+        "faithfulness": 0.9,
+        "answer_relevancy": 0.9512,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "How does LangSmith help monitor production LLM applications?",
+        "faithfulness": 0.875,
+        "answer_relevancy": 0.9852,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What are LangSmith datasets used for?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is RAGAS?",
+        "faithfulness": 0.9,
+        "answer_relevancy": 0.8052,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "How does RAGAS compute faithfulness?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is answer relevancy in RAGAS?",
+        "faithfulness": 0.8,
+        "answer_relevancy": 0.9687,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is context recall in RAGAS?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9592,
+        "context_recall": 1.0,
+        "context_precision": 0.8333
+      },
+      {
+        "question": "What inputs does RAGAS evaluation require?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9451,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is Guardrails AI?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9785,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What is PII and why is it important to detect in LLM responses?",
+        "faithfulness": 0.75,
+        "answer_relevancy": 0.9951,
+        "context_recall": 1.0,
+        "context_precision": 0.8333
+      },
+      {
+        "question": "What does structured output validation ensure?",
+        "faithfulness": 0.8889,
+        "answer_relevancy": 0.7572,
+        "context_recall": 1.0,
+        "context_precision": 0.8333
+      },
+      {
+        "question": "What is Constitutional AI?",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.961,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "question": "What are common AI safety concerns with LLMs?",
+        "faithfulness": 0.8,
+        "answer_relevancy": 0.659,
+        "context_recall": 1.0,
+        "context_precision": 0.8333
+      }
+    ]
+  }
+}

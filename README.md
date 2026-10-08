@@ -124,6 +124,27 @@ Cách làm từng nhiệm vụ: xem [CHECKPOINTS.md](CHECKPOINTS.md). Cách nộ
 
 ---
 
+## Bài làm — Nguyễn Vũ Huy (2A202602662)
+
+- **Provider:** OpenAI `gpt-4o-mini` + `text-embedding-3-small`, Python 3.13
+- **LangSmith project:** `day22-nguyenvuhuy` (≥ 100 traces: 50 `rag-query` + 50 `ab-rag-query`)
+- **Prompt Hub:** `nguyen-vu-huy-rag-prompt-v1` (ngắn gọn, 2-4 câu) · `nguyen-vu-huy-rag-prompt-v2` (chuyên gia, có cấu trúc, 3-5 câu)
+- **Evidence + phân tích V1 vs V2:** xem [evidence/README.md](evidence/README.md)
+
+Chạy lại toàn bộ:
+
+```bash
+python -m venv .venv && source .venv/Scripts/activate   # hoặc: uv venv --python 3.13 .venv
+pip install -r requirements.txt "langchain-community<0.4"
+cp .env.example .env                                     # điền LANGCHAIN_API_KEY + OPENAI_API_KEY
+cd src && PYTHONUTF8=1 python run_all.py                 # hoặc --step N
+python 04_guardrails_validator.py --demo pii             # chỉ demo PII (hoặc --demo json)
+```
+
+Bước 3 tự ghi `data/ragas_report.json`, bản sao `evidence/03_ragas_report.json` và biểu đồ `evidence/03_ragas_scores.png`.
+
+---
+
 ## Tips và lưu ý
 
 **LangSmith tracing — đặt biến môi trường đúng thứ tự:**
